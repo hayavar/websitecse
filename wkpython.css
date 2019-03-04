@@ -1,0 +1,9 @@
+.report p {
+  margin-top: 20px;
+  color: #4a4a4a;
+  font-family: tahoma;
+  width: 90%;
+  justify-content: left;
+  margin-left: auto;
+  margin-right: auto;
+}

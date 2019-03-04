@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600");
+
+body {
+  overflow-x: hidden;
+  #desc {
+    height: 100vh;
+    .row {
+      height: 100%;
+      width: 100%;
+      .left {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-family: "Montserrat";
+      }
+      .sub {
+        font-size: 50px;
+        font-weight: 300;
+        letter-spacing: 5px;
+        text-align: center;
+      }
+      .right {
+        background: url("iconics/bg.png") center center no-repeat;
+        background-size: cover;
+      }
+    }
+  }
+}
+.img_heading {
+  width: 100%;
+  text-align: center;
+  font-family: "Montserrat";
+  font-weight: 300;
+  letter-spacing: 8px;
+  font-size: 60px;
+  margin: 40px 0;
+}
+#images {
+  height: 200vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 5px;
+  grid-auto-rows: 300px 300px;
+  .img_container {
+    overflow: hidden;
+    .img_wrapper {
+      height: 100%;
+      width: 100%;
+      transition: all 1s ease-out;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+  .one {
+    background: url("iconics/IMG_20180405_151704.jpg") center center no-repeat;
+    background-size: cover;
+  }
+  .two {
+    background: url("iconics/IMG_20180407_102031.jpg") center center no-repeat;
+    background-size: cover;
+  }
+  .four {
+    background: url("iconics/IMG-20180409-WA0037.jpg") center center no-repeat;
+    background-size: cover;
+  }
+  .five {
+    background: url("iconics/IMG-20180409-WA0041.jpg") center center no-repeat;
+    background-size: cover;
+  }
+  .six {
+    background: url("iconics/IMG-20180409-WA0042.jpg") center center no-repeat;
+    background-size: cover;
+  }
+  .seven {
+    background: url("iconics/IMG-20180427-WA0039.jpg") center center no-repeat;
+    background-size: cover;
+  }
+  .eight {
+    background: url("iconics/IMG-20180428-WA0005.jpg") center center no-repeat;
+    background-size: cover;
+  }
+  .nine {
+    background: url("iconics/IMG-20180428-WA0007.jpg") center center no-repeat;
+    background-size: cover;
+  }
+  .three {
+    background: url("iconics/IMG-20180409-WA0032.jpg") center center no-repeat;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 1000px) {
+  #desc {
+    height: auto;
+  }
+  .left {
+    .sub {
+      font-size: 35px !important;
+    }
+  }
+  #images {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 300px;
+    height: auto;
+  }
+}
